@@ -19,12 +19,12 @@ print """\
 +-+-+-+-+-+-+-+ {Version: 1.0}
 """
 parser = argparse.ArgumentParser(description="Spammer (Email) is a tool used to spam an email address by sending an email repeatedly using an SMTP server.", epilog="If you had stuck, you can mail me at p4kl0nc4t@obsidiancyberteam.id")
-parser.add_argument("to", metavar="to", help="the email address to spam")
-parser.add_argument("subject", help="body of the email to send")
-parser.add_argument("body", help="body of the email to send")
-parser.add_argument("frommail", metavar="from", help="mail from. Not all SMTP server accepts this, prefer using provided email address")
-parser.add_argument("host", help="the SMTP server host")
-parser.add_argument("port", type=int, help="the SMTP server port")
+parser.add_argument("--to", metavar="to", help="the email address to spam")
+parser.add_argument("--subject", help="body of the email to send")
+parser.add_argument("--body", help="body of the email to send")
+parser.add_argument("--frommail", metavar="from", help="mail from. Not all SMTP server accepts this, prefer using provided email address")
+parser.add_argument("--host", help="the SMTP server host")
+parser.add_argument("--port", type=int, help="the SMTP server port")
 parser.add_argument("--ssl", help="the SMTP server requires SSL", action="store_true")
 parser.add_argument("--username", help="username for SMTP server auth")
 parser.add_argument("--password", help="password for SMTP server auth")
